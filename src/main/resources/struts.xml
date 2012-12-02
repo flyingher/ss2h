@@ -9,6 +9,9 @@
 	<constant name="struts.devMode" value="true" />
 
 	<package name="default" namespace="/" extends="struts-default">
+		<action name="regAction">
+			<result>/WEB-INF/jsp/success.jsp</result>
+		</action>
 		<action name="*">
 			<result>/WEB-INF/jsp/{1}.jsp</result>
 		</action>
